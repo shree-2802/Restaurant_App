@@ -1,0 +1,115 @@
+.app__navbar {
+  background-color: var(--color-black);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 18px;
+}
+.app__navbar-logo {
+  width: 199px;
+  height: 60px;
+}
+.app__navbar .app__navbar-link {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  cursor: pointer;
+}
+.app__navbar-link li:hover {
+  color: gray;
+}
+.app__navbar-registration {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.app__navbar-registration-link {
+  transition: 1s ease;
+}
+.app__navbar-registration-link:hover {
+  border-bottom: 1px solid gray;
+}
+.app__navbar-registration-line {
+  height: 30px;
+  width: 3px;
+  border-radius: 40%;
+  background-color: var(--color-grey);
+}
+.app__navbar-hamburger {
+  display: none;
+}
+.app__navbar-hamburger-links {
+  position: absolute;
+  background-color: var(--color-black);
+  box-shadow: 0 0px 5px rgba(245, 245, 245, 0.6);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.app__navbar-hamburger-links.fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.app__navbar-hamburger-links.fadeOut {
+  animation: fadeOut 1.5s ease-in forwards;
+}
+.app__navbar-hamburger-links > .app__navbar-link {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  padding: 1.4rem 3rem;
+}
+.app__navbar-hamburger-links > .app__navbar-link li {
+  margin: 3rem 0;
+}
+.app__navbar-hamburger-links > .app__navbar-link li:hover{
+  color:#fff;
+}
+.app__navbar-hamburger-links-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: var(--color-golden);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateY(0); /* End at the normal position */
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+@media screen and (width<1000px) {
+  .app__navbar-hamburger {
+    display: block;
+  }
+  .app__navbar .app__navbar-link {
+    display: none;
+  }
+  .app__navbar-hamburger-links > .app__navbar-link {
+    display: block;
+    color: var(--color-golden);
+  }
+}
+
+@media screen and (width<900px) {
+  .app__navbar-registration {
+    display: none;
+  }
+}
