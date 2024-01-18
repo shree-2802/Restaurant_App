@@ -1,4 +1,4 @@
-import { gericht, spoon, welcome } from './images';
+import { gericht, spoon, welcome,G} from './images';
 
 //NavBar Constants
 export const navBarConstants = {
@@ -17,3 +17,15 @@ export const headerConstants = {
   buttonContent: 'Explore Menu',
   welcome: welcome,
 };
+
+//AboutUs constants
+
+export const aboutUsConstants={
+  gImage:G,
+  about:'About Us',
+  history:'Our History',
+  aboutContent:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.',
+  historyContent:'Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.',
+  aboutButton:'Know More',
+  spoon:spoon
+}
