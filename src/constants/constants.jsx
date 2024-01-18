@@ -1,4 +1,14 @@
-import { gericht, spoon, welcome, G, knife,menu } from './images';
+import {
+  gericht,
+  spoon,
+  welcome,
+  G,
+  knife,
+  menu,
+  chef,
+  quote,
+  sign,
+} from './images';
 
 //NavBar Constants
 export const navBarConstants = {
@@ -40,5 +50,18 @@ export const menuConstants = {
   title: 'Today’s Special',
   wineTitle: 'Wine & Beer',
   cocktails: 'Cocktails',
-  menuImage:menu
+  menuImage: menu,
+};
+
+//chefConstants
+
+export const chefConstants = {
+  image: chef,
+  topText: 'Chef’s Word',
+  heading: 'What we believe in',
+  colonImage: quote,
+  text: 'auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.',
+  name: 'Kevin Luo',
+  designation: 'Chef & Founder',
+  signature: sign,
 };
