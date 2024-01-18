@@ -1,0 +1,82 @@
+.app__chef {
+  display: flex;
+  padding: 2rem 4rem;
+  gap: 5rem;
+  background-color: var(--color-black);
+  color: #fff;
+  font-family: var(--font-base);
+  align-items: center;
+}
+.app__chef--image {
+  flex: 1;
+}
+.app__chef--image img {
+  width: 100%;
+  height: 100%;
+}
+.app__chef--context {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.app__chef--context-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+.app__chef--context-heading p {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+}
+.app__chef--context-heading h1 {
+  font-weight: 600px;
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--color-golden);
+}
+.app__chef--context-text img {
+  width: 47px;
+  height: 40px;
+}
+.app__chef--context-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 28px;
+}
+.app__chef--context-sign {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.app__chef--context-sign h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--color-golden);
+}
+.app__chef--context-sign p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-alt);
+  color: var(--color-grey);
+}
+.app__chef--context-signature {
+  width: 235px;
+  height: 83px;
+}
+
+@media screen and (width<900px) {
+  .app__chef {
+    flex-direction: column;
+    padding: 6rem;
+  }
+  .app__chef--context,
+  .app__chef--context-heading {
+    align-items: center;
+    text-align: center;
+  }
+}
