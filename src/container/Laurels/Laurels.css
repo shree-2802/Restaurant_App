@@ -1,0 +1,110 @@
+.app__laurels {
+  display: flex;
+  position: relative;
+  padding: 4rem;
+  background-color: var(--color-black);
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: var(--font-base);
+}
+.app__laurels--logo {
+  position: absolute;
+  width: 146px;
+  height: 146px;
+  top: 2rem;
+  left: 1rem;
+}
+.app__laurels--content {
+  display: flex;
+  padding: 4rem 8rem;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 3rem;
+}
+.app__laurels--content-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.app__laurels--content-left_head {
+  display: flex;
+  flex-direction: column;
+}
+.app__laurels--content-left_head p {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+}
+.app__laurels--content-left_head h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--color-golden);
+}
+.app__laurels--content-left-laurels {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 2rem;
+}
+.app__laurel-laurel {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.app__laurel-laurel div:nth-child(2) h3 {
+  color: var(--color-golden);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+}
+.app__laurel-laurel div:nth-child(2) p {
+  color: var(--color-grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  font-family: var(--font-alt);
+}
+.app__laurel-laurel img {
+  width: 79px;
+  height: 79px;
+}
+.app__laurels--content-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__laurels--content-right img {
+  width: 100%;
+  min-width: 280px;
+  min-height: 400px;
+}
+
+@media screen and (width<1600px) {
+    .app__laurels--content{
+        padding: 4rem 2rem;
+    }
+  .app__laurels--content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .app__laurels--content-left_head {
+    align-items:center ;
+    text-align: center;
+  }
+}
+@media screen and (width<800px) {
+    
+  .app__laurels--logo {
+    width: 100px;
+    height: 100px;
+  }
+  .app__laurels--content-left-laurels {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+
