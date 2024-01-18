@@ -1,8 +1,9 @@
 import React from 'react';
-
-const SubHeading = () => (
+import { spoon } from '../../constants/images';
+const SubHeading = ({ text }) => (
   <div>
-    SubHeading
+    <p>{text}</p>
+    <img src={spoon} alt='->' />
   </div>
 );
 
