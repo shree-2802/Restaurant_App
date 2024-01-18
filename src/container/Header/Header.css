@@ -1,0 +1,55 @@
+.app__header {
+  display: flex;
+  gap: 4rem;
+  padding: 3rem 6rem;
+  background-color: var(--color-black);
+  align-items: center;
+  font-family: var(--font-base);
+  width: 100%;
+  justify-content: space-around;
+}
+.app__header-left {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.7rem;
+}
+.app__header-left p:first-child {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
+}
+.app__header-left h1 {
+  font-weight: 700;
+  font-size: 3.7rem;
+  color: var(--color-golden);
+  line-height: 5rem;
+}
+.app__header-left p:last-child {
+  font-family: var(--font-alt);
+  line-height: 2rem;
+  font-size: 16px;
+}
+.app__header-left button {
+  align-self: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 18px;
+  font-family: var(--font-base);
+  background-color: var(--color-golden);
+  border: none;
+  border-radius: 2px;
+}
+.app__header-right img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 800px;
+  max-height: 500px; */
+}
+
+@media screen and (width<900px) {
+  .app__header {
+    flex-direction: column;
+    padding: 3rem 4rem;
+  }
+}
