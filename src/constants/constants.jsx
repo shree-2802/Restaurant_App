@@ -1,4 +1,4 @@
-import { gericht, spoon, welcome, G, knife } from './images';
+import { gericht, spoon, welcome, G, knife,menu } from './images';
 
 //NavBar Constants
 export const navBarConstants = {
@@ -31,4 +31,14 @@ export const aboutUsConstants = {
   aboutButton: 'Know More',
   spoon: spoon,
   knife: knife,
+};
+
+//Menu constants
+
+export const menuConstants = {
+  menu: 'Menu that fits you palatte',
+  title: 'Today’s Special',
+  wineTitle: 'Wine & Beer',
+  cocktails: 'Cocktails',
+  menuImage:menu
 };
