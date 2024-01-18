@@ -1,0 +1,30 @@
+.app__menuitem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.app__menuitem div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.app__menuitem div h5,
+.app__menuitem div p {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+}
+.app__menuitem div h5 {
+  color: var(--color-golden);
+}
+.app__menuitem div div {
+  height: 1px;
+  width: 119px;
+  background-color: #fff;
+}
+.app__menuitem p:nth-child(2){
+    color: var(--color-grey);
+    font-family: var(--font-alt);
+    line-height: 28px;
+    font-size: 16px;
+}
