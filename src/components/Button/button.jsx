@@ -2,9 +2,8 @@ import React from 'react';
 
 const Button = ({ text }) => {
   return (
-    <div
+    <button
       style={{
-        alignSelf: 'center',
         padding: '0.5rem 1.5rem',
         fontSize: '18px',
         fontFamily: 'var(--font-base)',
@@ -15,7 +14,7 @@ const Button = ({ text }) => {
       }}
     >
       {text}
-    </div>
+    </button>
   );
 };
 

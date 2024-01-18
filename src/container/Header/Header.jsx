@@ -7,7 +7,7 @@ import './Header.css';
 const Header = () => (
   <div className='app__header'>
     <div className='app__header-left'>
-      <SubHeading text={headerConstants.chase}/>
+      <SubHeading text={headerConstants.chase} />
       <h1>{headerConstants.mainHead}</h1>
       <p>{headerConstants.subText}</p>
       <Button text={headerConstants.buttonContent} />
