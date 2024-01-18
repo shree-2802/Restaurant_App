@@ -8,6 +8,8 @@ import {
   chef,
   quote,
   sign,
+  logo,
+  laurels,
 } from './images';
 
 //NavBar Constants
@@ -64,4 +66,13 @@ export const chefConstants = {
   name: 'Kevin Luo',
   designation: 'Chef & Founder',
   signature: sign,
+};
+
+//AwardConstants
+
+export const laurelConstants = {
+  img: logo,
+  text: 'Awards & recognition',
+  laurel: 'Our Laurels',
+  image: laurels,
 };
