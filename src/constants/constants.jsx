@@ -104,3 +104,13 @@ export const findUsConstants = {
   buttonContent: 'Visit Us',
   image: findus,
 };
+
+//newsletterConstants
+
+export const newsletterConstants = {
+  text: 'Newsletter',
+  title: 'Subscribe to Our Newsletter',
+  subText: 'And never miss latest Updates!',
+  placeholder: 'Email Address',
+  buttonContent: 'Subscribe',
+};
