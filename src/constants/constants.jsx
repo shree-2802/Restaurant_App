@@ -14,6 +14,7 @@ import {
   gallery03,
   gallery02,
   gallery01,
+  findus,
 } from './images';
 
 //NavBar Constants
@@ -90,4 +91,16 @@ export const galleryConstants = {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.',
   buttonContent: 'View More',
   images: [gallery04, gallery03, gallery02, gallery01],
+};
+
+//findUsConstants
+
+export const findUsConstants = {
+  text: 'Contact',
+  title: 'Find Us',
+  subText: 'Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG',
+  subTitle: 'Opening Hours',
+  time: ['Mon - Fri: 10:00 am - 02:00 am', 'Sat - Sun: 10:00 am - 03:00 am'],
+  buttonContent: 'Visit Us',
+  image: findus,
 };
