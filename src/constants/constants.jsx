@@ -16,6 +16,7 @@ import {
   gallery01,
   findus,
 } from './images';
+import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 
 //NavBar Constants
 export const navBarConstants = {
@@ -113,4 +114,23 @@ export const newsletterConstants = {
   subText: 'And never miss latest Updates!',
   placeholder: 'Email Address',
   buttonContent: 'Subscribe',
+};
+
+export const footerConstants = {
+  contact: {
+    text: 'Contact Us',
+    subText: '9 W 53rd St, New York, NY 10019, USA',
+    phone: ['+1 212-344-1230', '+1 212-555-1230'],
+  },
+  middle: {
+    title: 'GERICHT',
+    subText:
+      '"The best way to find yourself is to lose yourself in the service of others.”',
+    icons: [FiFacebook, FiTwitter, FiInstagram],
+  },
+  workingHours: [
+    { day: 'Monday-Friday:', time: '08:00 am -12:00 am' },
+    { day: 'Saturday-Sunday:', time: '07:00am -11:00 pm' },
+  ],
+  copyRights: '2024 Gerícht. All Rights reserved.',
 };
