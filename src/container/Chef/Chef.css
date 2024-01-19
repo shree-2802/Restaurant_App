@@ -2,7 +2,7 @@
   display: flex;
   padding: 2rem 4rem;
   gap: 5rem;
-  background-color: var(--color-black);
+  background:url('../../assets/bg.png');
   color: #fff;
   font-family: var(--font-base);
   align-items: center;
