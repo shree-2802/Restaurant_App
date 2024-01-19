@@ -1,0 +1,49 @@
+.app__newsletter {
+  display: flex;
+  background-color: var(--color-black);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-base);
+  gap: 3rem;
+}
+.app__newsletter--text p {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.app__newsletter--text h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 80px;
+  color: var(--color-golden);
+}
+.app__newsletter--text p:nth-child(3) {
+  font-family: var(--font-alt);
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.app__newsletter--input {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.app__newsletter--input input {
+  width: 500px;
+  padding: 1rem;
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--color-crimson);
+  font-family: var(--font-base);
+  font-size: 16px;
+  font-weight: 600;
+}
+@media screen and (width<600px) {
+  .app__newsletter--input input {
+    width: 100%;
+  }
+}

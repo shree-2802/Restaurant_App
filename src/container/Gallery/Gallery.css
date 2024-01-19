@@ -1,0 +1,122 @@
+.app__gallery {
+  display: flex;
+  padding: 2rem 0 2rem 5rem;
+  background-color: var(--color-black);
+  color: #fff;
+  align-items: center;
+  font-family: var(--font-base);
+  gap: 2rem;
+}
+.app__gallery--left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+  flex: 1;
+}
+.app__gallery--left p:first-child {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.app__gallery--left p:nth-child(3) {
+  font-family: var(--font-alt);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.app__gallery--left h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  color: var(--color-golden);
+}
+.app__gallery--right {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  flex: 2;
+  position: relative;
+  max-width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__gallery--right-imageContainer {
+  height: 100%;
+  display: flex;
+  column-gap: 2rem;
+  width: max-content;
+  overflow-x: scroll;
+}
+.app__gallery--right--arrows {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__gallery--right--arrows .left,.app__gallery--right--arrows .right{
+  background-color: var(--color-black);
+  border-radius: 3px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.app__gallery--right-img {
+  position: relative;
+  min-width: 300px;
+  height: 447px;
+  z-index: 0;
+  /* cursor: pointer; */
+}
+.app__gallery--right-img-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.app__gallery--right-img:hover {
+  opacity: 0.5;
+}
+.app__gallery--right-img-inst {
+  position: absolute;
+  /* display: none; */
+  opacity: 0;
+  transition: 0.5s ease;
+  top: 50%;
+  left: 47%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.app__gallery--right-img:hover  .app__gallery--right-img-inst{
+  opacity: 1;
+}
+
+@media screen and (width<900px) {
+  .app__gallery{
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .app__gallery--left{
+    align-items: center;
+    text-align: center;
+  }
+  .app__gallery--right{
+    width: 100%;
+    min-width: 300px;
+  }
+}
+/* .app__gallery--right div img {
+  width: 100%;
+  height: 100%;
+  .app__gallery--right-img:hover{
+    opacity: 0.4;
+}
+} */
