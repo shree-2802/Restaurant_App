@@ -1,0 +1,69 @@
+.app__findus{
+    background: url("../../assets/bg.png");
+    display: flex;
+    color:#fff;
+    padding: 4rem 8rem;
+    gap: 2rem;
+    font-family: var(--font-base);
+    align-items: center;
+    justify-content: center;
+}
+.app__findus--left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    gap: 2rem;
+}
+.app__findus--left-heading p{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+}
+.app__findus--left-heading h1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 80px;
+    color: var(--color-golden);
+}
+.app__findus--left-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+.app__findus--left-info p{
+    font-family: var(--font-alt);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color:var(--color-grey)
+}
+.app__findus--left-info h3{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    color:var(--color-golden);
+}
+.app__findus--left-info_time p{
+    color: #fff;
+}
+.app__findus--right{
+    flex: 1;
+}
+.app__findus--right img{
+    width: 100%;
+    max-width: 600px;
+}
+
+@media screen and (width<1000px) {
+    .app__findus{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .app__findus--left,.app__findus--left-info{
+        align-items: center;
+        text-align: center;
+    }
+}
