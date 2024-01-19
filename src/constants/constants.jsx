@@ -10,6 +10,10 @@ import {
   sign,
   logo,
   laurels,
+  gallery04,
+  gallery03,
+  gallery02,
+  gallery01,
 } from './images';
 
 //NavBar Constants
@@ -75,4 +79,15 @@ export const laurelConstants = {
   text: 'Awards & recognition',
   laurel: 'Our Laurels',
   image: laurels,
+};
+
+//galleryConstants
+
+export const galleryConstants = {
+  text: 'Instagram',
+  title: 'Photo Gallery',
+  subText:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.',
+  buttonContent: 'View More',
+  images: [gallery04, gallery03, gallery02, gallery01],
 };
